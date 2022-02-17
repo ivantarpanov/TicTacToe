@@ -52,6 +52,7 @@ public class TicTacToe implements ActionListener {
         resetButton.setSize(100,50);
         resetButton.setLocation(15,20);
         resetButton.addActionListener(this);
+        resetButton.setFocusable(false);
 
         title_panel.add(textField);
         frame.add(title_panel, BorderLayout.NORTH);
