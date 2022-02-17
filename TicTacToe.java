@@ -65,7 +65,8 @@ public class TicTacToe implements ActionListener {
        //toDO make reset button
 
         if (e.getSource()==resetButton){
-            frame.remove(button_panel);
+            frame.dispose();
+            new TicTacToe();
         }
 
         SwingUtilities.updateComponentTreeUI(frame);
